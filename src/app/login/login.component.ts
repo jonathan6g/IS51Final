@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(user: IUser) {
-    const defaultUser: IUser = { username: 'albert', password: 'albert123' }
+    const defaultUser: IUser = { username: 'jonathan', password: 'jonathan123' }
     if (user.username !== '' && user.password !== '') {
       if (user.username === defaultUser.username && user.password === defaultUser.password) {
         this.localStorageService.saveItemsToLocalStorage(user);
